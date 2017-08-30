@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>New Rule</h1>
+      <%= form_for @rule, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+          <div>
+            <%= f.label :from_domain %>
+            <%= f.text_field :from_domain %>
+          </div>
+          <div>
+            <%= f.label :to_domain %>
+            <%= f.text_field :to_domain %>
+          </div>
+          <div>
+            <%= f.submit "Create" %>
+            <%= link_to "Back", root_path%>
+          </div>
+      <% end %>
+    </table>
+  </body>
+</html>
+
